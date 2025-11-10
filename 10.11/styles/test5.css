@@ -1,11 +1,17 @@
-div {
-  display: inline;
-}
-
 p {
   display: block;
 }
 
 span {
   display: none;
+}
+
+.INLINEBLOCK {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+}
+
+.INLINE {
+  display: inline;
 }
