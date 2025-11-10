@@ -1,0 +1,11 @@
+div {
+  display: inline;
+}
+
+p {
+  display: block;
+}
+
+span {
+  display: none;
+}
