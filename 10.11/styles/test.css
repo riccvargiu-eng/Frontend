@@ -1,0 +1,58 @@
+h1 {
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+  border: 15px solid blue;
+}
+
+.esercizio1 {
+  width: 300px;
+  height: auto;
+  padding: 10px;
+  border: 2px dashed green;
+  margin: 10px;
+
+}
+
+.esercizio2 {
+   width: 300px;
+  height: auto;
+  padding: 10px;
+  border: 40px double purple;
+  border width: 50 px;  
+  border style: dashed;
+
+  margin: 15px;
+}
+
+list {
+  margin top: 50px;
+  margin right: 20px;
+  margin bottom: 50px;
+  margin left: 20px;
+}
+
+section {
+  width: 300px;
+  height: auto;
+  padding: 150px;
+  border: 4px solid orange;
+  margin: 15px;
+  box-sizing: border-box;
+}
+.esercizio4 {
+  width: 300px;
+  height: 150px;
+    border: 40px solid red;
+  padding: 10px 15px;
+  margin: 5px 10px 15px;  
+}
+
+span {
+  width: 200px;
+  height: auto;
+  padding: 20px;
+  margin: 25px;
+  display: inline-block;
+}
+
