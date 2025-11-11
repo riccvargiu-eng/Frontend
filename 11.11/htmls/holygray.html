@@ -11,17 +11,24 @@
         box-sizing: border-box;
       }
 
+      html {
+        height: 100%;
+      }
+
+      body {
+        height: 100%;
+      }
+
       header {
-        background-color: lightgray;
-        padding: 20px;
         text-align: center;
         width: 100%;
+        background-color: red;
       }
       article {
-        margin: 20px;
-        padding: 20px;
+        margin: 0;
+        padding: 0;
         background-color: #f9f9f9;
-        border: 1px solid #ddd;
+        border: 0px;
       }
       footer {
         background-color: lightgray;
@@ -30,51 +37,77 @@
         position: fixed;
         width: 100%;
         bottom: 0;
+        background-color: blue;
       }
 
       .parent {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        gap: 8px;
-        width: 100vw;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 0px;
+        width: 100%;
         height: 100vh;
       }
 
-      div {
-        border: 2px solid black;
-        min-width: 30vw;
+      .div1 {
+        grid-row: span 3 / span 3;
+        grid-row-start: 0;
+        background-color: burlywood;
       }
+
       .div2 {
         grid-row: span 3 / span 3;
         grid-row-start: 0;
+        background-color: white;
       }
 
       .div3 {
         grid-row: span 3 / span 3;
         grid-row-start: 0;
+        background-color: green;
       }
-
-      .div4 {
-        grid-row: span 3 / span 3;
-        grid-row-start: 0;
+      /* 
+      @media (min-width: 768px) and (max-width: 1024px) {
+        nav {
+          background-color: red;
+        }
       }
+      @media (min-width: 430px) and (max-width: 768px) {
+        nav {
+          background-color: red;
+        }
+      } */
     </style>
   </head>
   <body>
-    <article>
-      <header>
-        <h1>A heading here</h1>
-        <p>Posted by John Doe</p>
-        <p>Some additional information here</p>
-      </header>
-      <p>Lorem Ipsum dolor set amet....</p>
-    </article>
+    <header>
+      <h1>A heading here</h1>
+      <p>Posted by John Doe</p>
+      <p>Some additional information here</p>
+    </header>
 
     <div class="parent">
-      <div class="div2">1</div>
-      <div class="div3">2</div>
-      <div class="div4">3</div>
+      <div class="div1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis
+        tenetur facilis recusandae ipsa dolorum inventore eos eaque libero cum
+        atque earum, enim sapiente iusto laborum natus? Laborum nihil cupiditate
+        at consequatur sit officiis iste ipsum saepe, dicta maxime totam quasi,
+        ipsam dignissimos eligendi praesentium, vel velit. Ipsam sit, totam
+        itaque officia commodi ex sapiente magnam necessitatibus eius dolor
+        voluptatem, deleniti quasi id earum? Repellendus itaque repudiandae
+        illum neque dolores totam facere dolor, vel molestiae! Doloribus ipsum
+        assumenda amet numquam magnam, quis eum in cum voluptatum obcaecati
+        sapiente nihil aut iure enim quasi explicabo autem laudantium laboriosam
+        ullam alias. Dolores culpa asperiores sapiente! Libero reiciendis
+        asperiores laboriosam labore eos debitis reprehenderit quibusdam fugiat
+        temporibus numquam dolor, in nobis dolorem aperiam quia repellat! Ullam
+        at numquam explicabo, quibusdam debitis quos sequi tempore harum
+        exercitationem vel earum assumenda expedita. Quos perspiciatis vel
+        suscipit officia optio excepturi. Quos quasi aperiam tempora similique
+        reprehenderit commodi?
+      </div>
+      <div class="div2">2</div>
+      <div class="div3">3</div>
     </div>
 
     <footer>
