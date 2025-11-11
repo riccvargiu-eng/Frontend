@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holy Gray</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      header {
+        background-color: lightgray;
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+      }
+      article {
+        margin: 20px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+      }
+      footer {
+        background-color: lightgray;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+
+      .parent {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 8px;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      div {
+        border: 2px solid black;
+        min-width: 30vw;
+      }
+      .div2 {
+        grid-row: span 3 / span 3;
+        grid-row-start: 0;
+      }
+
+      .div3 {
+        grid-row: span 3 / span 3;
+        grid-row-start: 0;
+      }
+
+      .div4 {
+        grid-row: span 3 / span 3;
+        grid-row-start: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <header>
+        <h1>A heading here</h1>
+        <p>Posted by John Doe</p>
+        <p>Some additional information here</p>
+      </header>
+      <p>Lorem Ipsum dolor set amet....</p>
+    </article>
+
+    <div class="parent">
+      <div class="div2">1</div>
+      <div class="div3">2</div>
+      <div class="div4">3</div>
+    </div>
+
+    <footer>
+      <p>Author: Hege Refsnes</p>
+      <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+    </footer>
+  </body>
+</html>
