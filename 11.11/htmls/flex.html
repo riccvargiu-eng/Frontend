@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      div {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+      }
+      section {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 100vh;
+        background-color: lightgray;
+      }
+
+      h2 {
+        font-size: 10px;
+      }
+
+      div {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>
+        <h2>Prodotto 1</h2>
+        <a href="www.google.com">BUY</a>
+        <img src="../img/banner.jpg" width="70px" alt="" />
+        <span>20£</span>
+      </div>
+      <div>Box2</div>
+      <div>Box3</div>
+      <div>Box4</div>
+      <div>Box5</div>
+      <div>Box6</div>
+    </section>
+  </body>
+</html>
