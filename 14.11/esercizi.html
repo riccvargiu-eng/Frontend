@@ -44,7 +44,82 @@
       console.log("prodotto: " + prodotto);
       //20 / 4
       let divisione = 20 / 4;
-      console.log("resto :" + divisione);
+      console.log("quoziente :" + divisione);
+      //17 % 3
+      let resto = 17 % 3;
+      console.log("resto: " + resto);
+
+      //Usa l’operatore += per sommare 10 a una variabile let punti = 50;.
+      let punti = 50;
+      punti += 10;
+      console.log("valore di punti dopo incremento: " + punti);
+      //Confronta e prendi visione:
+
+      console.log(5 == "5"); //true
+      console.log(5 === "5"); //false
+      console.log(5 != 7); //true
+      console.log(8 !== "8"); //true
+
+      //Crea una variabile let eta = 20; e stampa "Maggiorenne" se >= 18, altrimenti "Minorenne".
+
+      let età = 20;
+      if (età >= 18) {
+        console.log("sei maggiorenne");
+      } else {
+        console.log("sei minorenne");
+      }
+      //Crea una variabile let voto = 30; e stampa "Ottimo" se è 30, "Buono" se è >= 18, "Insufficiente" altrimenti.
+      let voto = 30;
+      if ((voto = 30)) {
+        console.log("Ottimo");
+      } else if (voto >= 18) {
+        console.log("Buono");
+      } else {
+        console.log("Insufficiente");
+      }
+
+      //Usa un if...else if...else per salutare in base a let ora = 9, 15, 21.
+      let ora = (9, 15, 21);
+      if (ora <= 9) {
+        console.log("Buondì");
+      } else if (ora <= 15) {
+        console.log("Buon Pomeriggio");
+      } else {
+        console.log("Buonasera");
+      }
+      //Stampa i numeri da 1 a 20 con un ciclo for.
+      for (let i = 1; i <= 20; i++) {
+        console.log("numero: " + i);
+      }
+      //Stampa i numeri pari da 2 a 20.
+      for (let i = 2; i <= 20; i++) {
+        console.log("numero: " + i);
+      }
+      //Con un ciclo while stampa i numeri da 10 a 1 (conto alla rovescia).
+      let n = 10;
+      while (n >= 1) {
+        console.log("valore", n);
+        n--;
+      }
+      //Con un ciclo for stampa la tabellina del 5 (da 5x1 a 5x10).
+      //Somma i numeri da 1 a 100 con un ciclo for.
+      //Scrivi una funzione saluta() che stampa "Ciao!".
+      function saluta(nome) {
+        console.log("ciao, " + nome);
+      }
+      saluta("Luigi");
+      //Scrivi una funzione somma(a, b) che restituisce la somma.
+      function sum(a, b) {
+        return a + b;
+      }
+      let result = sum(1, 2);
+      console.log("result: ", result);
+      //Scrivi una funzione moltiplica(a, b) che restituisce il prodotto.
+      function multiplication(c, d) {
+        return c * d;
+      }
+      let result2 = multiplication(2, 2);
+      console.log("result2: ", result2);
     </script>
   </body>
 </html>
