@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lezione 2 JS</title>
+  </head>
+  <body>
+    <script>
+      //CONDIZIONI
+
+      let a = 18;
+
+      if (a <= 18) {
+        console.log("sei minorenne");
+      } else {
+        console.log("sei maggiorenne");
+      }
+
+      //Else if
+      let voto = 75;
+      if (voto >= 90) {
+        console.log("hai preso A");
+      } else if (voto >= 80) {
+        console.log("hai preso B");
+      } else {
+        console.log("hai preso F");
+      }
+
+      //CICLO DI FOR
+
+      for (let i = 0; i < 5; i++) {
+        console.log("numero:", i);
+      }
+
+      //CICLO DI WHILE
+
+      let n = 0;
+      while (n < 3) {
+        console.log("valore:", n);
+        n++;
+      }
+
+      // FUNZIONI
+
+      let cacca = "menz";
+      function saluta(nome) {
+        console.log("ciao, " + nome + "!");
+      }
+      saluta("Luigi");
+      saluta(cacca);
+    </script>
+  </body>
+</html>
