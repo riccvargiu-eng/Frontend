@@ -14,6 +14,60 @@
       }
       let risultato = somma(5, 7);
       console.log("Risultato", risultato);
+
+      function raddoppia(numero) {
+        return numero * 2;
+      }
+      console.log("Risultato", raddoppia(4));
+
+      // ARRAY
+
+      const colori = ["rosso", "verde", "blu", "giallo"];
+      console.log(colori);
+      console.log(colori.length); //quanti sono
+      console.log(colori[(0, 1, 2)]); //indicherà l'ultimo
+      console.table(colori); //tabella
+      console.log(colori);
+
+      let blu = colori[2];
+      console.log("il colore selezionato è: " + blu);
+      colori.push("viola");
+      console.table(colori);
+      colori.push("arancione", "nero", "bianco"); //aggiunge in coda
+      console.table(colori);
+      let ultimo = colori.pop(); //rimuove l'ultimo elemento
+
+      //Iterazione sugli array
+
+      for (let i = 0; i < colori.length; i++) {
+        console.log("Colore " + i + ": " + colori[i]);
+      }
+
+      //OBJECT
+
+      let car = {
+        marca: "Subaru",
+        modello: "Baracca",
+        anno: 2020,
+        colore: "Blu",
+        targa: 1234,
+      };
+      console.log(car);
+      console.table(car);
+      console.log(car.targa);
+      let carModello = car.modello;
+      console.log("il modello della macchina è: " + carModello);
+
+      let persona = {
+        nome: "Anna",
+        età: 30,
+        saluta: function () {
+          console.log("Ciao, sono " + this.nome); //this cerca localmente lo spazio di memoria (ovvero dentro le {}), la variabile
+        },
+      };
+
+      console.log(persona);
+      persona.saluta();
     </script>
   </body>
 </html>
