@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lezione JS</title>
+  </head>
+  <body>
+    <h1>Javascritp</h1>
+    <script>
+      console.log("ciao sono uno script");
+      console.error("messaggio errore");
+      console.warn("messaggio avviso");
+      console.log("messaggio informativo");
+      let x = 10;
+      console.log("il valore di x è:", x);
+      console.log(x);
+      x = 20;
+      console.log("il valore di x è:" + x);
+      const y = 5;
+      console.log("il valore di y è:" + y);
+
+      let nome = "Mario";
+      let cognome = "Rossi";
+      let età = 25;
+      console.log(
+        "Mi chiamo " + nome + " " + cognome + " e ho " + età + " anni" //corretto
+      );
+      console.log("Mi chiamo" + nome + cognome + età); //errato
+
+      //Boolean
+      let isStudente = true;
+      let isFemale = false;
+      console.log("Uno studente? " + isStudente);
+
+      //null
+      let niente = null;
+      let indefinito; //questo è undefinied, è un errore
+      console.log("niente intenzionale: " + niente);
+      console.log("indefinito: " + indefinito);
+
+      //Object e Array - verifica nella console
+
+      console.log(typeof nome);
+      console.log(typeof età);
+      console.log(typeof isStudente);
+      console.log(typeof niente); //verrà stampato nella console come object - bug intenzionale
+      let array = [1, 2, 3];
+      console.log(typeof array);
+      let oggetto = { nome: "Mario", cognome: "Rossi" };
+      console.log(typeof oggetto);
+      console.log(typeof indefinito);
+    </script>
+  </body>
+</html>
