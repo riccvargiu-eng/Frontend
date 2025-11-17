@@ -16,28 +16,32 @@ document.getElementById("btnAggiungi").onclick = function () {
   }
 
   lista.innerHTML = `<p>${nome}, ${eta}, ${professione}</p>`;
+
+  const utente = creaUtente(nome, eta, professione);
+  utenti.push(utente);
+  console.log(utenti);
 };
 
-function creaUtente(nome, eta, professione, categoria) {
-  categoria = categoria.toLowerCase();
-
-  switch (categoria) {
+function creaUtente(nome, eta, professione = "non specificata") {
+  console.log("📝 Creazione nuovo utente...");
+  let categoria;
+  switch (professione.toLowerCase()) {
     case "studente":
-      console.log("studente");
-      utenti.push("studente");
+      categoria = "studente";
       break;
     case "developer":
-      console.log("developer");
-      utenti.push("developer");
+    case "programmatore":
+    case "sviluppatore":
+      categoria = "developer";
       break;
     case "designer":
-      console.log("designer");
-      utenti.push("designer");
+    case "grafico":
+      categoria = "designer";
       break;
     default:
-      console.log("altro");
-      utenti.push("altro");
+      categoria = "altro";
   }
+
   return {
     nome: nome,
     eta: eta,
