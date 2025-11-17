@@ -49,3 +49,11 @@ function creaUtente(nome, eta, professione = "non specificata") {
     categoria: categoria,
   };
 }
+
+const generaMessaggio = (utente) => {
+  return `${utente.nome} ha ${utente.eta} anni ed è classificato come ${utente.categoria}`;
+};
+
+function mostraUtenti() {
+  lista.innerHTML = "";
+}
