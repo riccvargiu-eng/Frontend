@@ -1,17 +1,6 @@
-let giorno = "number";
-
-switch (giorno) {
-  case "lunedì":
-    console.log("Odio il lunedì");
-    break;
-  case "martedì":
-    console.log("È solo martedì...");
-    break;
-  case "venerdì":
-    console.log("Weekend in arrivo!");
-    break;
-  case "venerdì":
-    console.log("Weekend in arrivo!");
-  default:
-    console.log("Giorno non riconosciuto");
+function sum() {
+  let n1 = Number(document.getElementById("n1").value);
+  let n2 = Number(document.getElementById("n2").value);
+  let somma = n1 + n2;
+  document.getElementById("risultato").textContent = "Risultato: " + somma;
 }
