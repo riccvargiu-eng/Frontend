@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let giorno = "martedì";
+
+      //   switch (giorno) {
+      //     case "lunedì":
+      //       console.log("Odio il lunedì");
+      //       break;
+      //     case "martedì":
+      //       console.log("È solo martedì...");
+      //       break;
+      //     case "venerdì":
+      //       console.log("Weekend in arrivo!");
+      //       break;
+      //     default:
+      //       console.log("Giorno non riconosciuto");
+      //   }
+
+      function saluta(nome = "ospite") {
+        console.log("Ciao " + nome);
+      }
+      saluta("Mario");
+      saluta();
+
+      function somma(a = 0, b = 0, c = 0, d = 0) {
+        return a + b + c + d;
+      }
+      console.log(somma(10, 25));
+    </script>
+  </body>
+</html>
