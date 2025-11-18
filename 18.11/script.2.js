@@ -31,4 +31,4 @@ const figlio = document.querySelector("#contenuto");
 console.log("Figlio:", figlio.children);
 //trovare fratello
 const fratello = document.querySelector("#contenuto");
-console.log("Fratello:", fratello.children);
+console.log("Fratello:", fratello.nextElementSibling);
