@@ -14,22 +14,32 @@
 //     risultato = n1 * n2;
 //   }
 
-//   document.getElementById("Risultato").textContent = "Risultato " + risultato;
+//   document.getElementById("Risultato").textContent =
+//     "Il risultato è " + risultato;
 // }
 
 function calcolo(operazione) {
   const n1 = Number(document.getElementById("n1").value);
   const n2 = Number(document.getElementById("n2").value);
 
-  const tipo = {
-    somma: (a, b) => a + b,
-    sottrazione: (a, b) => a - b,
-    divisione: (a, b) => a / b,
-    moltiplicazione: (a, b) => a * b,
-  };
+  let risultato;
 
-  const risultato = tipo[operazione](n1, n2);
-
+  switch (operazione) {
+    case "somma":
+      risultato = n1 + n2;
+      break;
+    case "sottrazione":
+      risultato = n1 - n2;
+      break;
+    case "divisione":
+      risultato = n1 / n2;
+      break;
+    case "moltiplicazione":
+      risultato = n1 * n2;
+      break;
+    default:
+      risultato = "Operazione non valida";
+  }
   document.getElementById("Risultato").textContent =
     "Il risultato è " + risultato;
 }
