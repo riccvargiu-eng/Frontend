@@ -9,7 +9,7 @@
         color: red;
       }
       .evidenziata {
-        background-color: green;
+        background-color: black;
       }
     </style>
   </head>
@@ -17,13 +17,11 @@
     <h1>Manipolazione DOM: Lista attività</h1>
     <input id="testo" type="text" />
     <button>AGGIUNGI</button>
-    <p id="messaggio">Nessuna attività inserita</p>
     <ul class="lista"></ul>
     <script>
       const input = document.querySelector("input"); //per elemento
       const button = document.querySelector("button"); //per elemento
       const lista = document.querySelector(".lista"); //per classe
-      const messaggio = document.getElementById("messaggio");
 
       //button=si attvia
       button.addEventListener("click", () => {
@@ -43,11 +41,6 @@
           //applica la classe se cliccato
           nuovo.classList.toggle("completata");
         });
-        //triggera doppio click *attenzione!* "ondblclick doppio click" non supportato con eventlistener
-        nuovo.addEventListener("dblclick", () => {
-          nuovo.classList.toggle("evidenziata");
-        });
-        input.value = "";
       });
     </script>
   </body>
