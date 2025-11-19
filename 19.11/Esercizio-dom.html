@@ -7,19 +7,32 @@
   </head>
   <body>
     <h1>Manipolazione DOM: Lista attività</h1>
-    <input type="text" />
+    <input id="testo" type="text" />
     <button>AGGIUNGI</button>
     <ul class="lista">
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li>primo</li>
     </ul>
     <script>
+      const input = document.querySelector("input"); //per elemento
+      const button = document.querySelector("button"); //per elemento
+      const lista = document.querySelector(".lista"); //per classe
 
-
-
+      //button=si attvia
+      button.addEventListener("click", () => {
+        const nuovo = document.createElement("li"); //crea li
+        const button2 = document.createElement("button");
+        button2.textContent = "X";
+        nuovo.textContent = "Paragrafo aggiunto!"; //testo paragrafo
+        // nuovo.style.backgroundColor = "red"; //in più
+        lista.appendChild(nuovo); //aggiunge a lista
+        nuovo.appendChild(button2); //aggiunge a lista
+        //triggera il click
+        button2.addEventListener("click", () => {
+          nuovo.remove(); //cancella tutto (nuovo)
+        });
+      });
     </script>
   </body>
 </html>
+
+//crea un css che segna quella classe come completata tagliata o evidenziata
