@@ -8,6 +8,9 @@
       .completata {
         color: red;
       }
+      .evidenziata {
+        background-color: black;
+      }
     </style>
   </head>
   <body>
@@ -25,7 +28,7 @@
         const nuovo = document.createElement("li"); //crea li
         const button2 = document.createElement("button");
         button2.textContent = "X";
-        nuovo.textContent = "Paragrafo aggiunto!"; //testo paragrafo
+        nuovo.textContent = input.value; //testo paragrafo
         // nuovo.style.backgroundColor = "red"; //in più
         lista.appendChild(nuovo); //aggiunge a lista
         nuovo.appendChild(button2); //aggiunge a lista
@@ -42,5 +45,3 @@
     </script>
   </body>
 </html>
-
-//crea un css che segna quella classe come completata tagliata o evidenziata
