@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manipolazione DOM: Lista attività</title>
+    <style>
+      .completata {
+        color: red;
+      }
+    </style>
   </head>
   <body>
     <h1>Manipolazione DOM: Lista attività</h1>
     <input id="testo" type="text" />
     <button>AGGIUNGI</button>
-    <ul class="lista">
-      <li>primo</li>
-    </ul>
+    <ul class="lista"></ul>
     <script>
       const input = document.querySelector("input"); //per elemento
       const button = document.querySelector("button"); //per elemento
@@ -26,9 +29,14 @@
         // nuovo.style.backgroundColor = "red"; //in più
         lista.appendChild(nuovo); //aggiunge a lista
         nuovo.appendChild(button2); //aggiunge a lista
-        //triggera il click
+        //triggera il click sul bottone X
         button2.addEventListener("click", () => {
           nuovo.remove(); //cancella tutto (nuovo)
+        });
+        //triggera il click sulla nuova lista "nuovo"
+        nuovo.addEventListener("click", () => {
+          //applica la classe se cliccato
+          nuovo.classList.toggle("completata");
         });
       });
     </script>
