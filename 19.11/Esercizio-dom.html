@@ -15,7 +15,7 @@
   </head>
   <body>
     <h1>Manipolazione DOM: Lista attività</h1>
-    <input id="testo" type="text"/>
+    <input id="testo" type="text" />
     <button>AGGIUNGI</button>
     <p id="messaggio">Nessuna attività inserita</p>
     <ul class="lista"></ul>
@@ -27,7 +27,7 @@
       function controllaCampi() {
         const messaggio = document.getElementById("messaggio");
         const liste = document.querySelectorAll("li");
-        if (liste.lenght < 1) {
+        if (liste.length < 1) {
           messaggio.textContent = "Nessuna attività inserita";
         } else {
           messaggio.textContent = "";
