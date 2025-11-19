@@ -17,6 +17,7 @@
     <h1>Manipolazione DOM: Lista attività</h1>
     <input id="testo" type="text" />
     <button>AGGIUNGI</button>
+    <button id="svuota">SVUOTA LISTA</button>
     <p id="messaggio">Nessuna attività inserita</p>
     <ul class="lista"></ul>
     <script>
@@ -58,6 +59,12 @@
         //triggera il click sul bottone X
 
         input.value = "";
+        controllaCampi();
+      });
+      const svuota = document.getElementById("svuota");
+
+      svuota.addEventListener("click", () => {
+        lista.innerHTML = "";
         controllaCampi();
       });
     </script>
