@@ -98,3 +98,60 @@ btn.addEventListener("click", () => {
   const esito = spesa >= 100 ? "sconto" : "nessuno";
   log(`Ciao, `, `Hai speso ${spesa} e hai ricevuto uno ${esito}!`);
 });
+
+//Esercizio 2.2
+btn.addEventListener("click", () => {
+  out.textContent = "";
+  function concatenaSep(sep, ...pezzi) {
+    log("Parole ricevute", `Array: ${pezzi}`);
+
+    let frase = "";
+    for (let i = 0; i < pezzi.length; i++) {
+      frase += pezzi[i];
+      if (i < pezzi.length - 1) {
+        frase += sep;
+      }
+    }
+    return frase;
+  }
+  let risultato1 = concatenaSep("-", "A", "B", "C");
+  log("Esercizio 2.2 ", risultato1);
+});
+
+//Esercizio 2.3
+btn.addEventListener("click", () => {
+  out.textContent = "";
+  const t1 = ["js", "es6"];
+  const t2 = ["alg", "db"];
+  const allTags = [...t1, ...t2];
+  log(allTags);
+});
+
+//Esercizio 2.4
+btn.addEventListener("click", () => {
+  out.textContent = "";
+  const eta = 18;
+  const maggiorenne = eta >= 18 ? "adulto" : "minore";
+  log(`${eta} , ${maggiorenne}`);
+});
+
+//Esercizio 2.5
+btn.addEventListener("click", () => {
+  out.textContent = "";
+  function sommaVariabile(...nums) {
+    log(
+      "MAGIA DEL REST OPERATOR",
+      "I numeri che hai passato sono diventati un array!"
+    );
+    log("Cosa ricevo", `Array di numeri: [${nums}]`);
+    log("Da dove vengono?", "Dalla chiamata della funzione!");
+
+    let totale = 0;
+    for (let num of nums) {
+      totale += num;
+    }
+    return totale;
+  }
+  let risultato = sommaVariabile(1, 2, 3); //6
+  log("Esercizio 2.5 ", risultato);
+});
