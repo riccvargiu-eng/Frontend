@@ -57,4 +57,11 @@ btn.addEventListener("click", () => {
 //Esercizio 1.4
 btn.addEventListener("click", () => {
   out.textContent = "";
+  let regali = ["Libro", "Puzzle", "Sciarpa"];
+  regali.unshift("Regalo 1", "Regalo 2");
+  log("Esercizio 1.4 ", regali);
+  regali.splice(1, 1);
+  log("Esercizio 1.4 ", regali);
+  let copia = regali.slice(2, 5); //slice copia senza modificare
+  log("Esercizio 1.4 ", copia);
 });
