@@ -16,5 +16,9 @@ btn.addEventListener("click", () => {
   out.textContent = "";
 });
 
-playlist = ["Heat", "Sunrise", "Echo"]
-colori.push("giallo", "arancione");
+btn.addEventListener("click", () => {
+  out.textContent = "";
+  let playlist = ["Heat", "Sunrise", "Echo"];
+  playlist.push("giallo", "arancione");
+  log("Esercizio 1 ", playlist);
+});
