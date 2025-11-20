@@ -190,3 +190,16 @@ btn.addEventListener("click", () => {
   const { username: nick, role, active = false } = user;
   console.log(nick, role, active);
 });
+
+// //Esercizio 3.3
+// btn.addEventListener("click", () => {
+//   out.textContent = "";
+//   function prendiPrimoEConta(...items) {
+//     const [primo, ...resto] = items;
+//     return {
+//       primo: primo,
+//       contaResto: resto.length,
+//     };
+//   }
+//   console.log(prendiPrimoEConta(10, 20, 30, 40));
+// });
