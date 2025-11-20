@@ -118,6 +118,16 @@ btn.addEventListener("click", () => {
   log("Esercizio 2.2 ", risultato1);
 });
 
+//Esercizio 2.2
+btn.addEventListener("click", () => {
+  out.textContent = "";
+  function concatenaSep(sep, ...pezzi) {
+    log(pezzi.join(sep));
+  }
+  const paroleVarie = ["a", "b", "c"];
+  log(concatenaSep(" - ", ...paroleVarie));
+});
+
 //Esercizio 2.3
 btn.addEventListener("click", () => {
   out.textContent = "";
@@ -154,4 +164,20 @@ btn.addEventListener("click", () => {
   }
   let risultato = sommaVariabile(1, 2, 3); //6
   log("Esercizio 2.5 ", risultato);
+});
+
+//Esercizio 2.6
+btn.addEventListener("click", () => {
+  out.textContent = "";
+  const p1 = ["pane", "latte"];
+  const p2 = ["pasta", "uova"];
+  const listaCompleta = [...p1, ...p2];
+  log(listaCompleta);
+});
+
+//Esercizio 3.1
+btn.addEventListener("click", () => {
+  out.textContent = "";
+  const info = ["Luca", 28, "CTO", "Milano", "Italia"];
+  const [nome, , ruolo] = ["Luca", 1, "CTO"];
 });
