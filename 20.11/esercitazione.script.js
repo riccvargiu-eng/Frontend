@@ -16,9 +16,28 @@ btn.addEventListener("click", () => {
   out.textContent = "";
 });
 
+//Esercizio 1
 btn.addEventListener("click", () => {
   out.textContent = "";
   let playlist = ["Heat", "Sunrise", "Echo"];
-  playlist.push("giallo", "arancione");
+  playlist.push("Brano 1", "Brano 2");
   log("Esercizio 1 ", playlist);
+  playlist.shift();
+  playlist.push("Heat");
+  log("Esercizio 1 ", playlist);
+  let parte = playlist.slice(1, 4);
+  log("Esercizio 1 ", parte);
+});
+
+//Esercizio 1
+btn.addEventListener("click", () => {
+  out.textContent = "";
+  let playlist = ["Heat", "Sunrise", "Echo"];
+  playlist.push("Brano 1", "Brano 2");
+  log("Esercizio 1 ", playlist);
+  playlist.shift();
+  playlist.push("Heat");
+  log("Esercizio 1 ", playlist);
+  let parte = playlist.slice(1, 4);
+  log("Esercizio 1 ", parte);
 });
