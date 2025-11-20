@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lista della Spesa</title>
+  </head>
+  <body>
+    <h1>Lista della Spesa</h1>
+    <input type="text" id="inputItem" placeholder="Inserisci un prodotto" />
+    <button onclick="aggiungiElemento()">Aggiungi</button>
+    <ul id="lista"></ul>
+
+    <script>
+      let listaSpesa = []; //array vuoto, in questo caso in attesa di input utente
+
+      //FUNZIONE DELLA LOGICA
+      function aggiungiElemento() {
+        let input = document.getElementById("inputItem");
+        let valore = input.value.trim(); //trim si aggiunge dopo .value per togliere spazi iniziali e finali
+
+        if (valore !== "") {
+          //se valore è diverso da vuoto
+          listaSpesa.push(valore); //aggiungi valore
+          input.value = ""; // svuota campo
+          aggiornaLista(); //lancia/richiama funzione che aggiungiamo a campo svuotato
+        } else {
+          alert("Inserisci un prodotto!");
+        }
+      }
+
+      //funzione del DOM
+      function aggiornaLista() {
+        let ul = document.getElementById("lista");
+        ul.innerHTML = ""; //prende tutto elemento html e lo svuota
+
+        for (let item of listaSpesa) {
+          //svuotiamo e ristampiamo in ciclo
+          let li = document.createElement("li"); //creiamo lista
+          li.textContent = item; //creiamo un testo dentro li
+          ul.appendChild(li); //aggiungiamo a li come figliol
+        }
+      }
+    </script>
+  </body>
+</html>
