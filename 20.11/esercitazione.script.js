@@ -48,7 +48,7 @@ btn.addEventListener("click", () => {
   let numeri = [5, 3, 9, 1, 4];
   numeri.shift();
   numeri.pop();
-  numeri.push(7);
+  numeri.push(7); //aggiunge elemento in coda
   log("Esercizio 1.3 ", numeri);
   let sottoserie = numeri.slice(0, 2);
   log("Esercizio 1.3 ", sottoserie);
@@ -60,9 +60,9 @@ btn.addEventListener("click", () => {
   let regali = ["Libro", "Puzzle", "Sciarpa"];
   regali.unshift("Regalo 1", "Regalo 2");
   log("Esercizio 1.4 ", regali);
-  regali.splice(1, 1);
+  regali.splice(1, 1); // parte da 1 e cancella 1
   log("Esercizio 1.4 ", regali);
-  let copia = regali.slice(2, 5); //slice copia senza modificare
+  let copia = regali.slice(2, 5); //slice copia senza modificare, parte da 2 e 5 non compreso
   log("Esercizio 1.4 ", copia);
 });
 
@@ -77,4 +77,24 @@ btn.addEventListener("click", () => {
   log("Esercizio 1.5 ", messaggi);
   let messaggicentrali = messaggi.slice(1, 4);
   log("Esercizio 1.5 ", messaggicentrali);
+});
+
+//Esercizio 1.6
+btn.addEventListener("click", () => {
+  out.textContent = "";
+  let scorte = [12, 5, 8, 3, 9];
+  scorte.push("nuovovalore 1 ", "nuovovalore 2 "); //aggiunge 2 elementi in coda
+  log("Esercizio 1.6 ", scorte);
+  scorte.shift(); //elimina il primo
+  let ultimo = scorte.pop(); //assegnare costante a ciò che viene rimosso
+  scorte.unshift(ultimo); //con la costante, riaggiungerlo in cima
+  log("Esercizio 1.6 ", scorte);
+});
+
+//Esercizio 2.1
+btn.addEventListener("click", () => {
+  out.textContent = "";
+  const spesa = 100;
+  const esito = spesa >= 100 ? "sconto" : "nessuno";
+  log(`Ciao, `, `Hai speso ${spesa} e hai ricevuto uno ${esito}!`);
 });
