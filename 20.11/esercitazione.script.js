@@ -65,3 +65,16 @@ btn.addEventListener("click", () => {
   let copia = regali.slice(2, 5); //slice copia senza modificare
   log("Esercizio 1.4 ", copia);
 });
+
+//Esercizio 1.5
+btn.addEventListener("click", () => {
+  out.textContent = "";
+  let messaggi = ["hey", "ciao", "tutto bene?", "ok"];
+  messaggi.push("Messaggio 1");
+  messaggi.unshift("Messaggio 2");
+  log("Esercizio 1.5 ", messaggi);
+  messaggi.pop();
+  log("Esercizio 1.5 ", messaggi);
+  let messaggicentrali = messaggi.slice(1, 4);
+  log("Esercizio 1.5 ", messaggicentrali);
+});
