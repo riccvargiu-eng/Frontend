@@ -16,28 +16,45 @@ btn.addEventListener("click", () => {
   out.textContent = "";
 });
 
-//Esercizio 1
+//Esercizio 1.1
 btn.addEventListener("click", () => {
   out.textContent = "";
   let playlist = ["Heat", "Sunrise", "Echo"];
   playlist.push("Brano 1", "Brano 2");
-  log("Esercizio 1 ", playlist);
+  log("Esercizio 1.1 ", playlist);
   playlist.shift();
   playlist.push("Heat");
-  log("Esercizio 1 ", playlist);
+  log("Esercizio 1.1 ", playlist);
   let parte = playlist.slice(1, 4);
-  log("Esercizio 1 ", parte);
+  log("Esercizio 1.1 ", parte);
 });
 
-//Esercizio 2
+//Esercizio 1.2
 btn.addEventListener("click", () => {
   out.textContent = "";
   let coda = ["A", "B", "C", "D"];
   coda.unshift("Nuovapersona 1", "Nuovapersona 2");
-  log("Esercizio 2 ", coda);
+  log("Esercizio 1.2 ", coda);
   coda.pop();
-  log("Esercizio 2 ", coda);
+  log("Esercizio 1.2 ", coda);
   let ritorna = coda.splice(1, 1);
-  log("Esercizio 2 ", coda);
-  log("Esercizio 2 ", ritorna);
+  log("Esercizio 1.2 ", coda);
+  log("Esercizio 1.2 ", ritorna);
+});
+
+//Esercizio 1.3
+btn.addEventListener("click", () => {
+  out.textContent = "";
+  let numeri = [5, 3, 9, 1, 4];
+  numeri.shift();
+  numeri.pop();
+  numeri.push(7);
+  log("Esercizio 1.3 ", numeri);
+  let sottoserie = numeri.slice(0, 2);
+  log("Esercizio 1.3 ", sottoserie);
+});
+
+//Esercizio 1.4
+btn.addEventListener("click", () => {
+  out.textContent = "";
 });
