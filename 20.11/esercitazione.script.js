@@ -179,5 +179,14 @@ btn.addEventListener("click", () => {
 btn.addEventListener("click", () => {
   out.textContent = "";
   const info = ["Luca", 28, "CTO", "Milano", "Italia"];
-  const [nome, , ruolo] = ["Luca", 1, "CTO"];
+  const [nome, , ruolo] = ["Luca", , "CTO"];
+  log(nome, ruolo);
+});
+
+//Esercizio 3.2
+btn.addEventListener("click", () => {
+  out.textContent = "";
+  const user = { username: "cli_user", role: "editor" };
+  const { username: nick, role, active = false } = user;
+  console.log(nick, role, active);
 });
