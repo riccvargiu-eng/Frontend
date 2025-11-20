@@ -29,15 +29,15 @@ btn.addEventListener("click", () => {
   log("Esercizio 1 ", parte);
 });
 
-//Esercizio 1
+//Esercizio 2
 btn.addEventListener("click", () => {
   out.textContent = "";
-  let playlist = ["Heat", "Sunrise", "Echo"];
-  playlist.push("Brano 1", "Brano 2");
-  log("Esercizio 1 ", playlist);
-  playlist.shift();
-  playlist.push("Heat");
-  log("Esercizio 1 ", playlist);
-  let parte = playlist.slice(1, 4);
-  log("Esercizio 1 ", parte);
+  let coda = ["A", "B", "C", "D"];
+  coda.unshift("Nuovapersona 1", "Nuovapersona 2");
+  log("Esercizio 2 ", coda);
+  coda.pop();
+  log("Esercizio 2 ", coda);
+  let ritorna = coda.splice(1, 1);
+  log("Esercizio 2 ", coda);
+  log("Esercizio 2 ", ritorna);
 });
