@@ -1,0 +1,30 @@
+/* .cataloglist {
+display: flex;
+flex-wrap: wrap;
+gap 20px;
+  width: 200px;           
+  height: 100px;          
+  background-color: lightblue;  
+} */
+
+.cataloglist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-box {
+  width: 200px;
+  border: 2px solid #333;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
