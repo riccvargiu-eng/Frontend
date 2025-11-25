@@ -1,5 +1,5 @@
 import { API_KEY } from "./11/keys.js";
-const url = "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1";
+const url = "https://api.themoviedb.org/3/tv/popular?language=it-IT&page=100";
 const options = {
   method: "GET",
   headers: {
