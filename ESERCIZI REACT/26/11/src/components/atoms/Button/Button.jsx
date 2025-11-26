@@ -1,6 +1,10 @@
 import "./Button.css";
 
-function Button() {
-  return <button className="custom-button">Click Me</button>;
+function Button({ onClick, children, variant = "CLICK ME" }) {
+  return (
+    <button className="custom-button" onClick={onClick} children={children}>
+      {variant}
+    </button>
+  );
 }
 export default Button;
