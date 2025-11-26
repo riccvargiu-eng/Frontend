@@ -1,6 +1,6 @@
 import "./Button.css";
 
-function Button({ onClick, children, variant = "CLICK ME" }) {
+function Button({ onClick, children, variant }) {
   return (
     <button className="custom-button" onClick={onClick} children={children}>
       {variant}
